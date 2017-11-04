@@ -1,0 +1,30 @@
+{
+  "name": "bookmarklets",
+  "version": "0.3.0",
+  "description": "web accessibility visualization bookmarklets",
+  "main": "landmarks.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oaa-tools/bookmarklets-library.git"
+  },
+  "contributors": [
+    "Nicholas Hoyt",
+    "Landi Lark"
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/oaa-tools/bookmarklets/issues"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^3.8.1"
+  },
+  "scripts": {
+    "copy:css": "CSS=./styles.css; cp $CSS dist/",
+    "build": "webpack -p && npm run copy:css",
+    "debug": "webpack    && npm run copy:css",
+    "lint": "eslint *.js utils/*.js"
+  }
+}
