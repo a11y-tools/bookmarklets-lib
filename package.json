@@ -22,7 +22,7 @@
     "webpack": "^3.8.1"
   },
   "scripts": {
-    "copy:css": "CSS=./styles.css; cp $CSS dist/",
+    "copy:css": "CSS=./styles.css; cp $CSS build/",
     "build": "webpack -p && npm run copy:css",
     "debug": "webpack    && npm run copy:css",
     "lint": "eslint *.js utils/*.js"

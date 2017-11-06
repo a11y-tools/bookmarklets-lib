@@ -10,7 +10,7 @@ module.exports = {
     lists:       "./lists.js"
   },
   output: {
-    path: path.join(__dirname, "dist"),
+    path: path.join(__dirname, "build"),
     filename: "[name].js"
   },
   module: {
