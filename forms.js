@@ -7,9 +7,9 @@ import { InfoObject }   from './InfoObject';
 import { getCssClass }  from './utils/constants';
 import { addPolyfills } from './utils/utils';
 
-(function () {
+if (isA11yBookmarklet) {
   initForms().run();
-})();
+}
 
 function initForms () {
 

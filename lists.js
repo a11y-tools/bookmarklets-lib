@@ -8,9 +8,9 @@ import { getCssClass }               from './utils/constants';
 import { countChildrenWithTagNames } from './utils/a11y';
 import { addPolyfills }              from './utils/utils';
 
-(function () {
+if (isA11yBookmarklet) {
   initLists().run();
-})();
+}
 
 function initLists () {
 

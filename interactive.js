@@ -7,9 +7,9 @@ import { InfoObject }   from './InfoObject';
 import { getCssClass }  from './utils/constants';
 import { addPolyfills } from './utils/utils';
 
-(function () {
+if (isA11yBookmarklet) {
   initInteractive().run()
-})();
+}
 
 /*
 *   Interactive elements as defined by HTML5:

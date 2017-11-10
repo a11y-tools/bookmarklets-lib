@@ -2,15 +2,15 @@
 *   landmarks.js: highlight ARIA landmarks
 */
 
-import { Bookmarklet }    from './Bookmarklet';
-import { InfoObject }     from './InfoObject';
-import { getCssClass }    from './utils/constants';
-import { isDescendantOf } from './utils/a11y';
-import { addPolyfills }   from './utils/utils';
+import { Bookmarklet }                from './Bookmarklet';
+import { InfoObject }                 from './InfoObject';
+import { getCssClass, isBookmarklet } from './utils/constants';
+import { isDescendantOf }             from './utils/a11y';
+import { addPolyfills }               from './utils/utils';
 
-(function () {
+if (isA11yBookmarklet) {
   initLandmarks().run();
-})();
+}
 
 function initLandmarks () {
 
