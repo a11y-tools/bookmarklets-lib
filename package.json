@@ -19,12 +19,16 @@
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
+    "rollup": "^0.51.5",
+    "rollup-plugin-bundleutils": "^1.0.1",
     "webpack": "^3.8.1"
   },
   "scripts": {
-    "copy:css": "CSS=./styles.css; cp $CSS build/",
-    "build": "webpack -p && npm run copy:css",
-    "debug": "webpack    && npm run copy:css",
-    "lint": "eslint *.js utils/*.js"
+    "css:build":  "cp ./styles.css build/",
+    "css:export": "cp ./styles.css export/",
+    "build":      "webpack -p && npm run css:build",
+    "debug":      "webpack    && npm run css:build",
+    "lint":       "eslint *.js utils/*.js",
+    "rollup":     "rollup -c && npm run css:export"
   }
 }
