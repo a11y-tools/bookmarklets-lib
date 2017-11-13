@@ -16,20 +16,20 @@ function createOverlay (tgt, rect, cname) {
   const MINWIDTH  = 68;
   const MINHEIGHT = 27;
 
-  let node = document.createElement("div");
-  node.setAttribute("class", [cname, 'oaa-element-overlay'].join(' '));
-  node.startLeft = (rect.left + scrollOffsets.x) + "px";
-  node.startTop  = (rect.top  + scrollOffsets.y) + "px";
+  let node = document.createElement('div');
+  node.setAttribute('class', [cname, 'oaa-element-overlay'].join(' '));
+  node.startLeft = (rect.left + scrollOffsets.x) + 'px';
+  node.startTop  = (rect.top  + scrollOffsets.y) + 'px';
 
   node.style.left = node.startLeft;
   node.style.top  = node.startTop;
-  node.style.width  = Math.max(rect.width, MINWIDTH) + "px";
-  node.style.height = Math.max(rect.height, MINHEIGHT) + "px";
+  node.style.width  = Math.max(rect.width, MINWIDTH) + 'px';
+  node.style.height = Math.max(rect.height, MINHEIGHT) + 'px';
   node.style.borderColor = tgt.color;
   node.style.zIndex = zIndex;
 
-  let label = document.createElement("div");
-  label.setAttribute("class", 'oaa-overlay-label');
+  let label = document.createElement('div');
+  label.setAttribute('class', 'oaa-overlay-label');
   label.style.backgroundColor = tgt.color;
   label.innerHTML = tgt.label;
 

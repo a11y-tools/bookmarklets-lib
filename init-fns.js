@@ -16,14 +16,14 @@ export function initForms () {
   addPolyfills();
 
   let targetList = [
-    {selector: "button",   color: "purple", label: "button"},
-    {selector: "input",    color: "navy",   label: "input"},
-    {selector: "keygen",   color: "gray",   label: "keygen"},
-    {selector: "meter",    color: "maroon", label: "meter"},
-    {selector: "output",   color: "teal",   label: "output"},
-    {selector: "progress", color: "olive",  label: "progress"},
-    {selector: "select",   color: "green",  label: "select"},
-    {selector: "textarea", color: "brown",  label: "textarea"}
+    {selector: 'button',   color: 'purple', label: 'button'},
+    {selector: 'input',    color: 'navy',   label: 'input'},
+    {selector: 'keygen',   color: 'gray',   label: 'keygen'},
+    {selector: 'meter',    color: 'maroon', label: 'meter'},
+    {selector: 'output',   color: 'teal',   label: 'output'},
+    {selector: 'progress', color: 'olive',  label: 'progress'},
+    {selector: 'select',   color: 'green',  label: 'select'},
+    {selector: 'textarea', color: 'brown',  label: 'textarea'}
   ];
 
   let selectors = targetList.map(function (tgt) {return '<li>' + tgt.selector + '</li>';}).join('');
@@ -33,9 +33,9 @@ export function initForms () {
   }
 
   let params = {
-    appName:    "Forms",
-    cssClass:   getCssClass("Forms"),
-    msgText:    "No form-related elements found: <ul>" + selectors + "</ul>",
+    appName:    'Forms',
+    cssClass:   getCssClass('Forms'),
+    msgText:    'No form-related elements found: <ul>' + selectors + '</ul>',
     targetList: targetList,
     getInfo:    getInfo,
     dndFlag:    true
@@ -53,12 +53,12 @@ export function initHeadings () {
   addPolyfills();
 
   let targetList = [
-    {selector: "h1", color: "navy",   label: "h1"},
-    {selector: "h2", color: "olive",  label: "h2"},
-    {selector: "h3", color: "purple", label: "h3"},
-    {selector: "h4", color: "green",  label: "h4"},
-    {selector: "h5", color: "gray",   label: "h5"},
-    {selector: "h6", color: "brown",  label: "h6"}
+    {selector: 'h1', color: 'navy',   label: 'h1'},
+    {selector: 'h2', color: 'olive',  label: 'h2'},
+    {selector: 'h3', color: 'purple', label: 'h3'},
+    {selector: 'h4', color: 'green',  label: 'h4'},
+    {selector: 'h5', color: 'gray',   label: 'h5'},
+    {selector: 'h6', color: 'brown',  label: 'h6'}
   ];
 
   let selectors = targetList.map(function (tgt) {return tgt.selector;}).join(', ');
@@ -70,9 +70,9 @@ export function initHeadings () {
   }
 
   let params = {
-    appName:    "Headings",
-    cssClass:   getCssClass("Headings"),
-    msgText:    "No heading elements (" + selectors + ") found.",
+    appName:    'Headings',
+    cssClass:   getCssClass('Headings'),
+    msgText:    'No heading elements (' + selectors + ') found.',
     targetList: targetList,
     getInfo:    getInfo,
     dndFlag:    true
@@ -90,9 +90,9 @@ export function initImages () {
   addPolyfills();
 
   let targetList = [
-    {selector: "area", color: "teal",   label: "area"},
-    {selector: "img",  color: "olive",  label: "img"},
-    {selector: "svg",  color: "purple", label: "svg"}
+    {selector: 'area', color: 'teal',   label: 'area'},
+    {selector: 'img',  color: 'olive',  label: 'img'},
+    {selector: 'svg',  color: 'purple', label: 'svg'}
   ];
 
   let selectors = targetList.map(function (tgt) {return tgt.selector;}).join(', ');
@@ -102,9 +102,9 @@ export function initImages () {
   }
 
   let params = {
-    appName:    "Images",
-    cssClass:   getCssClass("Images"),
-    msgText:    "No image elements (" + selectors + ") found.",
+    appName:    'Images',
+    cssClass:   getCssClass('Images'),
+    msgText:    'No image elements (' + selectors + ') found.',
     targetList: targetList,
     getInfo:    getInfo,
     dndFlag:    true
@@ -133,30 +133,30 @@ export function initInteractive () {
 
   let targetList = [
     // interactive elements defined in HTML5 spec
-    {selector: "a",                    color: "olive",  label: "a"},
-    {selector: "audio[controls]",      color: "olive",  label: "audio"},
-    {selector: "button",               color: "olive",  label: "button"},
-    {selector: "embed",                color: "purple", label: "embed"},
-    {selector: "iframe",               color: "teal",   label: "iframe"},
-    {selector: "img[usemap]",          color: "maroon", label: "img"},
-    {selector: "input",                color: "navy",   label: "input"},
-    {selector: "keygen",               color: "teal",   label: "keygen"},
-    {selector: "label",                color: "purple", label: "label"},
-    {selector: "object[usemap]",       color: "gray",   label: "object"},
-    {selector: "select",               color: "green",  label: "select"},
-    {selector: "textarea",             color: "navy",   label: "textarea"},
-    {selector: "video[controls]",      color: "navy",   label: "video"},
+    {selector: 'a',                    color: 'olive',  label: 'a'},
+    {selector: 'audio[controls]',      color: 'olive',  label: 'audio'},
+    {selector: 'button',               color: 'olive',  label: 'button'},
+    {selector: 'embed',                color: 'purple', label: 'embed'},
+    {selector: 'iframe',               color: 'teal',   label: 'iframe'},
+    {selector: 'img[usemap]',          color: 'maroon', label: 'img'},
+    {selector: 'input',                color: 'navy',   label: 'input'},
+    {selector: 'keygen',               color: 'teal',   label: 'keygen'},
+    {selector: 'label',                color: 'purple', label: 'label'},
+    {selector: 'object[usemap]',       color: 'gray',   label: 'object'},
+    {selector: 'select',               color: 'green',  label: 'select'},
+    {selector: 'textarea',             color: 'navy',   label: 'textarea'},
+    {selector: 'video[controls]',      color: 'navy',   label: 'video'},
 
     // other form elements
-    {selector: "meter",                color: "maroon", label: "meter"},
-    {selector: "output",               color: "brown",  label: "output"},
-    {selector: "progress",             color: "gray",   label: "progress"},
+    {selector: 'meter',                color: 'maroon', label: 'meter'},
+    {selector: 'output',               color: 'brown',  label: 'output'},
+    {selector: 'progress',             color: 'gray',   label: 'progress'},
 
     // other elements potentially interactive
-    {selector: "area",                 color: "brown",  label: "area"},
-    {selector: "details",              color: "purple", label: "details"},
-    {selector: "svg",                  color: "green",  label: "svg"},
-    {selector: "[tabindex]",           color: "teal",   label: "tabindex"}
+    {selector: 'area',                 color: 'brown',  label: 'area'},
+    {selector: 'details',              color: 'purple', label: 'details'},
+    {selector: 'svg',                  color: 'green',  label: 'svg'},
+    {selector: '[tabindex]',           color: 'teal',   label: 'tabindex'}
   ];
 
   let selectors = targetList.map(function (tgt) {return tgt.selector;}).join(', ');
@@ -170,9 +170,9 @@ export function initInteractive () {
   }
 
   let params = {
-    appName:    "Interactive",
-    cssClass:   getCssClass("Interactive"),
-    msgText:    "No interactive elements (" + selectors + ") found.",
+    appName:    'Interactive',
+    cssClass:   getCssClass('Interactive'),
+    msgText:    'No interactive elements (' + selectors + ') found.',
     targetList: targetList,
     getInfo:    getInfo,
     evalInfo:   evalInfo,
@@ -213,16 +213,16 @@ export function initLandmarks () {
   }
 
   let targetList = [
-    {selector: 'aside:not([role]), [role~="complementary"], [role~="COMPLEMENTARY"]',         color: "maroon", label: "complementary"},
-    {selector: 'footer, [role~="contentinfo"], [role~="CONTENTINFO"]', filter: isContentinfo, color: "olive",  label: "contentinfo"},
-    {selector: '[role~="application"], [role~="APPLICATION"]',                                color: "black",  label: "application"},
-    {selector: 'nav, [role~="navigation"], [role~="NAVIGATION"]',                             color: "green",  label: "navigation"},
-    {selector: '[role~="region"][aria-labelledby], [role~="REGION"][aria-labelledby]',        color: "teal",   label: "region"},
-    {selector: '[role~="region"][aria-label], [role~="REGION"][aria-label]',                  color: "teal",   label: "region"},
-    {selector: 'section[aria-labelledby], section[aria-label]',                               color: "teal",   label: "region"},
-    {selector: 'header, [role~="banner"], [role~="BANNER"]', filter: isBanner,                color: "gray",   label: "banner"},
-    {selector: '[role~="search"], [role~="SEARCH"]',                                          color: "purple", label: "search"},
-    {selector: 'main, [role~="main"], [role~="MAIN"]',                                        color: "navy",   label: "main"}
+    {selector: 'aside:not([role]), [role~="complementary"], [role~="COMPLEMENTARY"]',         color: 'maroon', label: 'complementary'},
+    {selector: 'footer, [role~="contentinfo"], [role~="CONTENTINFO"]', filter: isContentinfo, color: 'olive',  label: 'contentinfo'},
+    {selector: '[role~="application"], [role~="APPLICATION"]',                                color: 'black',  label: 'application'},
+    {selector: 'nav, [role~="navigation"], [role~="NAVIGATION"]',                             color: 'green',  label: 'navigation'},
+    {selector: '[role~="region"][aria-labelledby], [role~="REGION"][aria-labelledby]',        color: 'teal',   label: 'region'},
+    {selector: '[role~="region"][aria-label], [role~="REGION"][aria-label]',                  color: 'teal',   label: 'region'},
+    {selector: 'section[aria-labelledby], section[aria-label]',                               color: 'teal',   label: 'region'},
+    {selector: 'header, [role~="banner"], [role~="BANNER"]', filter: isBanner,                color: 'gray',   label: 'banner'},
+    {selector: '[role~="search"], [role~="SEARCH"]',                                          color: 'purple', label: 'search'},
+    {selector: 'main, [role~="main"], [role~="MAIN"]',                                        color: 'navy',   label: 'main'}
   ];
 
   let selectors = targetList.map(function (tgt) {return '<li>' + tgt.selector + '</li>';}).join('');
@@ -232,9 +232,9 @@ export function initLandmarks () {
   }
 
   let params = {
-    appName:    "Landmarks",
-    cssClass:   getCssClass("Landmarks"),
-    msgText:    "No elements with ARIA Landmark roles found: <ul>" + selectors + "</ul>",
+    appName:    'Landmarks',
+    cssClass:   getCssClass('Landmarks'),
+    msgText:    'No elements with ARIA Landmark roles found: <ul>' + selectors + '</ul>',
     targetList: targetList,
     getInfo:    getInfo,
     dndFlag:    true
@@ -254,9 +254,9 @@ export function initLists () {
   addPolyfills();
 
   let targetList = [
-    {selector: "dl", color: "olive",  label: "dl"},
-    {selector: "ol", color: "purple", label: "ol"},
-    {selector: "ul", color: "navy",   label: "ul"}
+    {selector: 'dl', color: 'olive',  label: 'dl'},
+    {selector: 'ol', color: 'purple', label: 'ol'},
+    {selector: 'ul', color: 'navy',   label: 'ul'}
   ];
 
   let selectors = targetList.map(function (tgt) {return tgt.selector;}).join(', ');
@@ -280,9 +280,9 @@ export function initLists () {
   }
 
   let params = {
-    appName:    "Lists",
-    cssClass:   getCssClass("Lists"),
-    msgText:    "No list elements (" + selectors + ") found.",
+    appName:    'Lists',
+    cssClass:   getCssClass('Lists'),
+    msgText:    'No list elements (' + selectors + ') found.',
     targetList: targetList,
     getInfo:    getInfo,
     dndFlag:    true

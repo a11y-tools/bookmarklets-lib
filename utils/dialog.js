@@ -15,9 +15,9 @@ function setBoxGeometry (dialog) {
   let left   = window.innerWidth / 2 - width / 2;
   let scroll = getScrollOffsets();
 
-  dialog.style.width = width + "px";
-  dialog.style.left  = (scroll.x + left) + "px";
-  dialog.style.top   = (scroll.y + 30) + "px";
+  dialog.style.width = width + 'px';
+  dialog.style.left  = (scroll.x + left) + 'px';
+  dialog.style.top   = (scroll.y + 30) + 'px';
 }
 
 /*
@@ -26,8 +26,8 @@ function setBoxGeometry (dialog) {
 *   a bookmarklet.
 */
 function createMsgDialog (cssClass, handler) {
-  let dialog = document.createElement("div");
-  let button  = document.createElement("button");
+  let dialog = document.createElement('div');
+  let button  = document.createElement('button');
 
   dialog.className = cssClass;
   setBoxGeometry(dialog);
@@ -64,11 +64,11 @@ MessageDialog.prototype.show = function (title, message) {
   if (!window[MSG_DIALOG])
     window[MSG_DIALOG] = createMsgDialog(this.CSS_CLASS, event => this.hide());
 
-  h2 = document.createElement("h2");
+  h2 = document.createElement('h2');
   h2.innerHTML = title;
   window[MSG_DIALOG].appendChild(h2);
 
-  div = document.createElement("div");
+  div = document.createElement('div');
   div.innerHTML = message;
   window[MSG_DIALOG].appendChild(div);
 };
